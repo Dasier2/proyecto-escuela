@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Flash-e</title>
+        <meta charset="UTF-8"> 
+        <title>Proyecto 013</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <h1>Mi pagina web</h1>
+        <!--etiqueta navbar es para que traiga todas las propiedades y demas y navbar-expand-lg es para que se pueda expandir el menu,
+         y navbar-dark es para darle un color al menu. bg-dark es la que da un color de background negro. el area label va a contener
+          el texto o la referencia donde el usuario va a hacer click-->
+        <header class="fixed-top"> 
+            <nav class="navbar navbar-expand-ln navbar-dark bg-dark">
+                <a href="https://frahmdigital.com/" class="navbar-brand"><img src="./imagenes/logo.png" alt="logo" class="logo_img"></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon" ></span>  <!--para agregar un icono-->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav"> <!--este div es el que va a colapsar y esta asociado con el navbarnav de arriba 
+                    este div es el que va a mostrar el menu, y estan conectados con el navbarnav el div y el button ya que el data-target y aria 
+                    control boostrap hace toda la configuration para que por medio del id se conecten-->
+                    <ul class="navbar-nav me-auto" > <!--el me-auto entrar -->
+                        <li class="nav-item">
+                            <a href="#servicios" class="nav-link">servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#nosotros" class="nav-link">nosotros</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
     </body>
 </html>
